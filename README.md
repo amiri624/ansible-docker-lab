@@ -47,7 +47,28 @@ nginx_container Runs an Nginx container with a mounted HTML page
 
 
 ---
+---
+ansible-docker-lab/
+│
+├── ansible.cfg
+├── README.md
+│
+├── inventory/
+│   └── hosts.ini
+│
+├── playbooks/
+│   └── site.yml
+│
+└── roles/
+    ├── docker/
+    │   └── tasks/main.yml
+    │
+    ├── nginx_container/
+    │   ├── tasks/main.yml
+    │   ├── templates/index.html.j2
+    │   └── vars/main.yml
 
+---
 🧑‍💻 Author: Meisam Amiri
 
 Linux System Administrator / DevOps Engineer

@@ -47,7 +47,7 @@ nginx_container Runs an Nginx container with a mounted HTML page
 
 
 ---
----
+---bash
 ansible-docker-lab/
 │
 ├── ansible.cfg

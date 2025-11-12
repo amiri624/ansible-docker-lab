@@ -1,6 +1,5 @@
 # ansible-docker-lab
 
-
 # 🐳 Ansible Docker Lab
 
 This project automates the installation of Docker and the deployment of a containerized Nginx web app using Ansible.

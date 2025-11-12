@@ -1,0 +1,26 @@
+
+---
+- name: Ensure old container is removed (if exists)
+  docker_container:
+    name: "{{ container_name }}"
+    state: absent
+  ignore_errors: yes
+
+- name: Create HTML template file
+  template:
+    src: index.html.j2
+    dest: /tmp/index.html
+
+- name: Run Nginx container with mounted HTML
+  docker_container:
+    name: "{{ container_name }}"
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - /tmp/index.html:/usr/share/nginx/html/index.html:ro
+    state: started
+    restart_policy: always
+
+
+---

@@ -1,0 +1,12 @@
+
+---
+- name: Deploy Dockerized Nginx App
+  hosts: servers
+  become: yes
+
+  roles:
+    - role: docker
+    - role: nginx_container
+
+
+---

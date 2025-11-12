@@ -1,0 +1,7 @@
+
+---
+container_name: mynginx
+html_message: "Welcome to my Dockerized Nginx!"
+
+
+---

@@ -72,6 +72,6 @@ ansible-docker-lab/
 
 
 ```
-🧑‍💻 Author: Meisam Amiri
+🧑‍💻 Author: 
 
 Linux System Administrator / DevOps Engineer
